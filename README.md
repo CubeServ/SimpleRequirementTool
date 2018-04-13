@@ -9,7 +9,7 @@ These are
 - Set the status of an requirement
 - Set the status of development and test
 - Mark an requirement as deleted
-- You can add owhn columns if you need them.
+- You can add own columns if you need them.
 - Export the requirements to a file. This file can be loaded into Word. Word files are easier to read than the original Excel list.
 
 The VBA coding was developed 2012 and is used for many productive applications.
