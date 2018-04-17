@@ -19,3 +19,5 @@ The main use case are situations when the requirements provided by external depa
 The coding to generate unique searchable ID may be used in many Excel files, whether requirement or not.
 
 To make a running Excel file go to the Wiki tab on this page (You are probably currently in the tab code) and follow the guideline there. It should need about 30 minutes to make such an Excel file. The advantage is, that it can be in the layout that is used in your company and you know exactly what VBA code it contains.
+
+The documentation should be part of the final Excel template. See also the Wiki tab on this repository on what is to be written there.
