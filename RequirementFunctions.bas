@@ -287,6 +287,8 @@ Sub NeuesMenue()
 ' Rainer Winkler 13.03.2012
 ' Menu setzen
 
+' This may now be obsolete as the new Excel menu versions do not have a classical menu anymore - Delete?
+
 ' Aus Monika Weber "Excel VBA"
   Dim cb As CommandBar, cbc As CommandBarControl
   Set cb = Application.CommandBars("Worksheet Menu Bar")
@@ -339,6 +341,9 @@ End Sub
 
 Sub NeuesMenueLoeschen()
 ' Rainer Winkler 13.03.2012
+
+' This may now be obsolete as the new Excel menu versions do not have a classical menu anymore - Delete?
+
 ' Aus Monika Weber "Excel VBA"
   Dim cbc As CommandBarControl
   For Each cbc In Application.CommandBars("Worksheet Menu Bar").Controls
