@@ -277,7 +277,7 @@ Set cbc = cb.Controls.Add(Type:=msoControlButton, Before:=27)
     
 End Sub
 
-Sub KontextmenueZuruecksetzen()
+Sub ResetContextMenuChanges()
 ' Rainer Winkler 13.03.2012
 ' Aus Monika Weber "Excel VBA"
   Application.CommandBars("Cell").Reset

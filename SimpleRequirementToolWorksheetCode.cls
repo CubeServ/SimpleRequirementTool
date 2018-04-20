@@ -11,7 +11,8 @@ Attribute VB_Exposed = True
 
 
 Private Sub Workbook_Open()
-  ' Rainer Winkler CubeServ 13.03.2012
+  ' Rainer Winkler CubeServ 13.March.2012
+  ' Add menut items to the context menu
   RequirementFunctions.AddSimpleReqMenuToConextMenu
   RequirementFunctions.NeuesMenue
   ' Der Schutz muss so sein, dass das Makro die ID ändern darf
@@ -19,9 +20,8 @@ Private Sub Workbook_Open()
   RequirementFunctions.BlattEinstellungenSchuetzen
 End Sub
 Private Sub Workbook_BeforeClose(Cancel As Boolean)
-  ' Rainer Winkler CubeServ 13.03.2012
-  ' Wenn das Workbook geschlossen wird sollen die Menus wieder
-  ' entfernt werden.
-  RequirementFunctions.KontextmenueZuruecksetzen
+  ' Rainer Winkler CubeServ 13.March.2012
+  ' Remove the menu items when the workbook is closed
+  RequirementFunctions.ResetContextMenuChanges
   RequirementFunctions.NeuesMenueLoeschen
 End Sub
