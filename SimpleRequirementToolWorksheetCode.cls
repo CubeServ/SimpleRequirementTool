@@ -22,6 +22,7 @@ End Sub
 Private Sub Workbook_BeforeClose(Cancel As Boolean)
   ' Rainer Winkler CubeServ 13.March.2012
   ' Remove the menu items when the workbook is closed
+  ' It is save to run this method manually. But it may remove context menu items from other projects too
   RequirementFunctions.ResetContextMenuChanges
   RequirementFunctions.NeuesMenueLoeschen
 End Sub
