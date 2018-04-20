@@ -63,9 +63,11 @@ Const strEbeneUndefined = ""
 Const strEbeneRequirement = "Requirement"
 Const strEbeneComment = "Comment"
 
-Sub KontextmenueErgaenzen()
+Sub AddSimpleReqMenuToConextMenu()
 ' Rainer Winkler 09.04.2013
-' Kontextmenu setzen
+' Set new menu items in context menu
+' It is always save to run this method as macro. For instance
+' if the menu items are missed.
 
 ' Aus Monika Weber "Excel VBA"
 
