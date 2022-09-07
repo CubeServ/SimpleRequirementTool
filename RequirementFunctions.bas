@@ -1,6 +1,6 @@
 Attribute VB_Name = "RequirementFunctions"
-' Rainer Winkler 02.10.2015
-' Version 3.0
+' Rainer Winkler 07.09.2019
+' Version 3.1
 
 ' MIT License
 '
@@ -662,7 +662,7 @@ Sub Export()
                 End If
                 ' Wenn gewünscht werden Anforderungen und Kommentare, aber nicht Überschriften und auch nicht Anforderungen
                 ' die Überschriften sind mit einem Punkt abgeschlossen
-                If iAntwortCloseWithDot = vbYes And (sOpen = "<p>" Or sOpen = "<em>") Then
+                If iAntwortCloseWithDot = vbYes And (sOpen = "<p>" Or sOpen = "<p><em>") Then
                     fsinhalt.write "."
                 End If
                 fsinhalt.write sClose & vbCrLf
