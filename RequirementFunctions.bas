@@ -356,9 +356,9 @@ End Sub
 Sub GetNewID()
 ' Rainer Winkler 13.03.2012
 ' Ziehen einer neuen "eindeutigen" ID
-' In einer Zelle mit dem Namen LastID muss die letzte gültige Nummer stehen
+' In einer Zelle mit dem Namen LastID muss die letzte gÃ¼ltige Nummer stehen
 ' In einer Zelle mit dem Namen prefixForID muss ein Prefix stehen (darf leer sein)
-' Die Eindeutigkeit wird hier nicht wirklich geprüft. Es ist in der Verantwortung des Nutzers
+' Die Eindeutigkeit wird hier nicht wirklich geprÃ¼ft. Es ist in der Verantwortung des Nutzers
 ' das die Eindeutigkeit nicht durch Fehlbedienung verschwindet.
 
 Dim id As Integer
@@ -573,7 +573,7 @@ Sub Export()
         lngLastRow = lngLastRowGliederung
     End If
     
-    ' Zieldokument öffnen
+    ' Zieldokument Ã¶ffnen
     ' Quelle: http://vba1.de/vba/032html.php
     Dim sInput As String
     sInput = InputBox("Filename with complete path:", "Pfad")
@@ -599,10 +599,10 @@ Sub Export()
 
         Set fsinhalt = fsDatei.OpenAsTextStream(2, -2)
     
-        ' html-Grundgerüst erstellen
+        ' html-GrundgerÃ¼st erstellen
         ' & vbCrLf erzeugt im html-Quelltext einen Zeilenumbruch mit Cariage Return und Linefeed
         fsinhalt.write "<html>" & vbCrLf
-        fsinhalt.write "<!-- diese Datei wurde über eine VBA-Prozedur erstellt-->" & vbCrLf
+        fsinhalt.write "<!-- diese Datei wurde Ã¼ber eine VBA-Prozedur erstellt-->" & vbCrLf
         fsinhalt.write "<head>" & vbCrLf
         fsinhalt.write "</head>" & vbCrLf
         fsinhalt.write "<body>" & vbCrLf
@@ -637,13 +637,13 @@ Sub Export()
                         sClose = "</h6>"
                     ' BEGIN NEW 2.1
                     Case Is = strEbeneComment
-                        sOpen = "<em>"
-                        sClose = "</em>"
+                        sOpen = "<p><em>"
+                        sClose = "</em></p>"
                     ' END NEW 2.1
                     Case Is = strEbeneRequirement
                         sOpen = "<p>"
                         sClose = "</p>"
-                    ' Für den Fall, dass die Anforderung nicht im Kontextmenu gekennzeichnet ist, ist Spalte
+                    ' FÃ¼r den Fall, dass die Anforderung nicht im Kontextmenu gekennzeichnet ist, ist Spalte
                     ' Ebene leer. Auch in diesem Fall als Anforderung behandeln
                     Case Is = strEbeneUndefined
                         sOpen = "<p>"
@@ -660,8 +660,8 @@ Sub Export()
                         fsinhalt.write " [" & Cells(i, lngIDColumn).Value & "]"
                     End If
                 End If
-                ' Wenn gewünscht werden Anforderungen und Kommentare, aber nicht Überschriften und auch nicht Anforderungen
-                ' die Überschriften sind mit einem Punkt abgeschlossen
+                ' Wenn gewÃ¼nscht werden Anforderungen und Kommentare, aber nicht Ãœberschriften und auch nicht Anforderungen
+                ' die Ãœberschriften sind mit einem Punkt abgeschlossen
                 If iAntwortCloseWithDot = vbYes And (sOpen = "<p>" Or sOpen = "<em>") Then
                     fsinhalt.write "."
                 End If
@@ -671,7 +671,7 @@ Sub Export()
   
         Next i
         
-        ' alle html-tags wieder schließen
+        ' alle html-tags wieder schlieÃŸen
 
         fsinhalt.write "</body>" & vbCrLf
         fsinhalt.write "</html>"
@@ -767,7 +767,7 @@ End Sub
 
 Sub BlattEinstellungenSchuetzen()
   ' Rainer Winkler CubeServ 13.03.2012
-  ' Die ID wird vom Makro hochgezählt, darum darf der Schutz nur für den Anwender gelten
+  ' Die ID wird vom Makro hochgezÃ¤hlt, darum darf der Schutz nur fÃ¼r den Anwender gelten
   ActiveWorkbook.Sheets("Einstellungen").Protect UserInterfaceOnly:=True
   ' ActiveSheet.Protect UserInterfaceOnly:=True
 End Sub
