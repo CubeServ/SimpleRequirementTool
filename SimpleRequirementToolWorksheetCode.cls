@@ -8,14 +8,14 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 
-
+' Insert the code from line 13 to your worksheet so that the VBA code is added to the context menu automatically.
 
 Private Sub Workbook_Open()
   ' Rainer Winkler CubeServ 13.March.2012
   ' Add menut items to the context menu
   RequirementFunctions.AddSimpleReqMenuToConextMenu
   RequirementFunctions.NeuesMenue
-  ' Der Schutz muss so sein, dass das Makro die ID ändern darf
+  ' Der Schutz muss so sein, dass das Makro die ID Ã¤ndern darf
   ' Darum wird der Schutz hier auch dann gesetzt, wenn er dieses bereits ist
   RequirementFunctions.BlattEinstellungenSchuetzen
 End Sub
