@@ -1,5 +1,5 @@
 Attribute VB_Name = "RequirementFunctions"
-' Rainer Winkler 07.09.2019
+' Rainer Winkler 07.09.2022
 ' Version 3.1
 
 ' MIT License
