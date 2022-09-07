@@ -8,7 +8,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 
-' Insert the code from line 13 to your worksheet so that the VBA code is added to the context menu automatically.
+' Insert the code starting with line 13 to your worksheet so that the VBA code is added to the context menu automatically.
 
 Private Sub Workbook_Open()
   ' Rainer Winkler CubeServ 13.March.2012
