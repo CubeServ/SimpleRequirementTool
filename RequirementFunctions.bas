@@ -1,7 +1,7 @@
 Attribute VB_Name = "RequirementFunctions"
 ' Insert the code starting with line 3 to a module in your Excel file
 ' Rainer Winkler 07.09.2022
-' Version 3.1
+' Version 3.1.1
 
 ' MIT License
 '
